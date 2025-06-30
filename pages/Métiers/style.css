@@ -1,18 +1,11 @@
-/* === BASE === */
+/* === NAVBAR === */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f172a;
+  background: #0f172a;
   color: #f8fafc;
-  background-image: url(../../assets/Background/Front-End_BG/ChatGPT-Image-30-juin-2025_-11_06_59.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-
 }
 
-/* === NAVBAR === */
 header {
   background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(8px);
@@ -64,7 +57,6 @@ header {
   color: #38bdf8;
 }
 
-/* === BURGER === */
 .burger {
   display: none;
   flex-direction: column;
@@ -103,43 +95,86 @@ header {
   }
 }
 
-/* === CONTENU === */
 main {
   padding-top: 90px;
-  padding-bottom: 4rem;
 }
 
-.front-section {
-  max-width: 800px;
+/* === SECTION MÉTIERS === */
+
+.metiers-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
   margin: auto;
-  padding: 3rem 2rem;
-  background: #1e293b;
-  border-radius: 1rem;
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+  text-align: center;
 }
 
-.front-section h1 {
-  font-size: 2.5rem;
+.metiers-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
   color: #38bdf8;
-  margin-bottom: 1rem;
 }
 
-.front-section .intro {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #cbd5e1;
-  margin-bottom: 2rem;
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.journee-type h2 {
-  font-size: 1.5rem;
+/* === CARDS MÉTIERS === */
+
+.card {
+  background-color: #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
   color: #facc15;
   margin-bottom: 1rem;
 }
 
-.journee-type ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-  color: #e2e8f0;
+.card p, .card ul {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card ul {
+  padding-left: 1rem;
+}
+
+/* === NEON EFFECT === */
+.card.neon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #38bdf8, 0 0 30px #38bdf8;
+}
+
+/* === JOURNÉE TYPE === */
+.card.journee {
+  background-color: #0f172a;
+  border: 2px dashed #38bdf8;
+}
+
+.card.journee ul li {
+  margin: 0.5rem 0;
+}
+
+
+/* Cache/affiche la journée type */
+.hidden {
+  display: none;
+}
+
+.card .journee-type {
+  margin-top: 1rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
   line-height: 1.6;
+}
+
+.card .journee-type ul {
+  padding-left: 1rem;
+  list-style: disc;
 }

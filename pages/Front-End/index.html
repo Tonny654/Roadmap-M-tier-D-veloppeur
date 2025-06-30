@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Développeur Front-End – Front-Forge</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../assets/logo/sea-7415664_1280.png" alt="image" />
+        <span>Front-Forge</span>
+      </div>
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="../../pages/Métiers/index.html">Métiers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENU -->
+  <main>
+    <section class="front-section">
+      <h1>Développeur Front-End</h1>
+      <p class="intro">
+        Le développeur Front-End transforme les maquettes graphiques en interfaces web dynamiques à l’aide de technologies comme HTML, CSS, JavaScript, React, Vue ou encore Angular.
+      </p>
+
+      <div class="journee-type">
+        <h2>🕒 Une journée type</h2>
+        <ul>
+          <li><strong>08h30 – 09h00 :</strong> Lecture des e-mails, tickets (Jira), vérification du backlog et de la CI.</li>
+          <li><strong>09h00 – 09h30 :</strong> Daily stand-up avec l’équipe (Agile/Scrum).</li>
+          <li><strong>09h30 – 12h30 :</strong> Intégration d’un composant UI, tests, responsive design.</li>
+          <li><strong>14h00 – 17h00 :</strong> Débogage, optimisations, code review, pair programming.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- BURGER MENU JS -->
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      burger.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
