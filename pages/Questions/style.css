@@ -7,7 +7,7 @@ body, html {
 }
 
 .background {
-  background: url('') center center / cover no-repeat fixed;
+  background: url('../../assets/Background/Question_BG/Question_BG.jpg') center center / cover no-repeat fixed;
   min-height: 100vh;
   padding-top: 90px;
   display: flex;

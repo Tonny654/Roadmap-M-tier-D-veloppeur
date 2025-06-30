@@ -7,7 +7,7 @@ body, html {
 }
 
 .background {
-  background: url('background-offres.jpg') center center / cover no-repeat fixed;
+  background: url('../../assets/Background/Offres_BG/Offres_BG.jpg') center center / cover no-repeat fixed;
   min-height: 100vh;
   padding-top: 100px;
   display: flex;
