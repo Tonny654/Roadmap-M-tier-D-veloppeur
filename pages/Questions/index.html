@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Questions – Front-Forge</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../assets/logo/sea-7415664_1280.png" alt="Logo" />
+        <span>Front-Forge</span>
+      </div>
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="../Métiers/index.html">Métiers</a></li>
+        <li><a href="#">Offres</a></li>
+        <li><a href="../Questions/index.html">Questions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENU -->
+  <main class="background">
+    <section class="questions-section">
+      <div class="card neon">
+        <h1>Questions fréquentes</h1>
+        <div class="faq">
+          <h3>💬 Quels sont les langages indispensables ?</h3>
+          <p>HTML, CSS, JavaScript sont la base. Selon le métier, Python, Java, PHP, Swift ou Kotlin peuvent être requis.</p>
+
+          <h3>🎓 Faut-il un diplôme pour devenir développeur ?</h3>
+          <p>Pas obligatoirement, mais une formation ou un portfolio solide est essentiel pour prouver ses compétences.</p>
+
+          <h3>🛠️ Quelles compétences non techniques sont utiles ?</h3>
+          <p>La communication, la rigueur, la gestion du temps, et l’adaptabilité sont très importantes.</p>
+
+          <h3>🚀 Est-il possible de travailler à distance ?</h3>
+          <p>Oui, de nombreux postes en développement web sont en télétravail ou en hybride.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SCRIPT BURGER -->
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      burger.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
