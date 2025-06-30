@@ -1,0 +1,150 @@
+/* === BASE === */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f8fafc;
+}
+
+.background {
+  background: url('../../assets/Background/Back-end_BG/4f6204ab-6218-4b5c-b9e5-d211db41dced.jpeg') center center / cover no-repeat fixed;
+  min-height: 100vh;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+/* === NAVBAR === */
+header {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #38bdf8;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #38bdf8;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* === SECTION === */
+.backend-section {
+  max-width: 800px;
+  padding: 3rem 2rem;
+}
+
+/* === CARD === */
+.card {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #38bdf8;
+}
+
+.card h1 {
+  font-size: 2.2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.card .intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.journee-type h2 {
+  font-size: 1.4rem;
+  color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.journee-type ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  color: #f1f5f9;
+}

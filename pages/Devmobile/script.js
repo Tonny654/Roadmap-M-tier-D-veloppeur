@@ -5,4 +5,3 @@
     navLinks.classList.toggle('active');
     burger.classList.toggle('active');
   });
-
