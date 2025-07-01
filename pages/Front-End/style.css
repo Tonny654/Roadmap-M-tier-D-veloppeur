@@ -113,7 +113,6 @@ main {
   max-width: 800px;
   margin: auto;
   padding: 3rem 2rem;
-  background: #1e293b;
   border-radius: 1rem;
   box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
 }
@@ -127,6 +126,33 @@ main {
 .front-section .intro {
   font-size: 1.1rem;
   line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+/* === CARD === */
+.card {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #38bdf8;
+}
+
+.card h1 {
+  font-size: 2.2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.card .intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: #cbd5e1;
   margin-bottom: 2rem;
 }
@@ -147,3 +173,6 @@ main {
 a {
   color: #facc15;
 }
+
+
+
