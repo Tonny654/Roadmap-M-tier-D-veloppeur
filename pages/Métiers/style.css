@@ -135,6 +135,10 @@ main {
   margin-bottom: 1rem;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .card p, .card ul {
   color: #cbd5e1;
   font-size: 0.95rem;

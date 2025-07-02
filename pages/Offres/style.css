@@ -159,6 +159,9 @@ header {
   transition: background-color 0.3s;
 }
 
+.card button a {
+  text-decoration: none;
+}
 .card button:hover {
   background-color: #0ea5e9;
 }
